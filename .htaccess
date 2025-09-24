@@ -1,0 +1,17 @@
+<IfModule mod_mime.c>
+    # MIME-типы для JavaScript модулей
+    AddType application/javascript .js
+    AddType application/javascript .mjs
+    AddType application/wasm .wasm
+    
+    # Убедимся, что кодировка правильная
+    AddCharset UTF-8 .js
+    AddCharset UTF-8 .mjs
+</IfModule>
+
+<IfModule mod_headers.c>
+    # Правильные заголовки для модулей
+    <FilesMatch "\.(js|mjs)$">
+        Header set Content-Type "application/javascript; charset=UTF-8"
+    </FilesMatch>
+</IfModule>
