@@ -1,51 +1,114 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link media="all" rel="stylesheet" type="text/css"
-            href="../../index.css" />
-        <link media="all" rel="stylesheet" type="text/css"
-            href="./contacts.css" />
-    </head>
-    <body>
-        <div id="content">
-            <header>
-                <div id="bar">
-                    <menu id="menu">
-                        <div id="header">
-                            <a href="../../index.html">
-                                <div id="center">
-                                    <div class="svg logo">
-                                        <div id="logo"></div>
-                                    </div>
-                                    <span>Vano Detail Inc.</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div id="items">
-                            <a class="item"
-                                href="../services/services.html"
-                                id="services">Услуги</a>
-                            <a class="item"
-                                id="contacts">Контакты</a>
-                            <a class="item" href="../reviews/reviews.html"
-                                id="reviews">Отзывы</a>
-                        </div>
-                    </menu>
+  <head>
+    <link media="all" rel="stylesheet" type="text/css" href="../../index.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="./contacts.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты</title>
+  </head>
+  <body>
+    <div id="content">
+      <header>
+        <div id="bar">
+          <div id="menu">
+            <div id="info-bar">
+              <a href="../../index.html">
+                <div id="logo-container">
+                  <span id="name">
+                    <img src="../../images/Logo_PHOENIX_primary.svg" id="logo" />
+                    Vano Detail Inc.
+                  </span>
                 </div>
-            </header>
-            <footer>
-                <div id="organization">
-                    <div id="name">
-                        <h2>ООО "Вано Детейл"</h2>
-                    </div>
-                    <div id="phone">
-                        <h3>+742293005</h3>
-                    </div>
-                    <div id="address">
-                        <h3>г. Белгород, ул. Костюкова, д. 43</h3>
-                    </div>
-                </div>
-            </footer>
+              </a>
+            </div>
+            <div id="items">
+              <a class="item" href="../services/services.html" id="services">Услуги</a>
+              <a class="item" id="contacts">Контакты</a>
+              <a class="item" href="../reviews/reviews.html" id="reviews">Отзывы</a>
+            </div>
+          </div>
         </div>
-    </body>
+      </header>
+      <div id="table">
+        <h1>Контакты</h1>
+        <div class="row">
+          <div class="column">
+            <h2>Должность</h2>
+            <p>Гениральный директор</p>
+            <p>Сотрудник SMM</p>
+            <p>Служба поддержки</p>
+            <p>HR менеджер</p>
+          </div>
+          <div class="column">
+            <h2>Номер телефона</h2>
+            <p>50-70-88</p>
+            <p>52-39-87</p>
+            <p>64-12-21</p>
+            <p>46-45-20</p>
+          </div>
+          <div class="column">
+            <h2>ВК</h2>
+            <p>https://vk.com/xyiakacobaka</p>
+            <p>https://vk.com/xyiakacobaka</p>
+            <p>https://vk.com/xyiakacobaka</p>
+            <p>https://vk.com/xyiakacobaka</p>
+          </div>
+          <div class="column">
+            <h2>Telegram</h2>
+            <p>@xyiakacobaka</p>
+            <p>@xyiakacobaka</p>
+            <p>@xyiakacobaka</p>
+            <p>@xyiakacobaka</p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div id="organization">
+          <div id="name">
+            <h2>ООО "Вано Детейл"</h2>
+          </div>
+          <div id="phone">
+            <h3>+742293005</h3>
+          </div>
+          <div id="address">
+            <h3>г. Белгород, ул. Костюкова, д. 43</h3>
+          </div>
+        </div>
+        <div id="appointment-button">
+          <img src="../../images/plus_thin_icon_171575.svg" />
+        </div>
+        <div id="popupForm" class="popup">
+          <form>
+            <label for="userName">Имя:</label>
+            <input type="text" id="userName" name="name" required />
+            <label for="userName">Телефон:</label>
+            <input
+              type="tel"
+              pattern="^(\+?\d{1,3}[\s\-]?)?\d{6,15}$"
+              inputmode="tel"
+              id="tel"
+              name="tel"
+              placeholder="+7XXXXXXXXXX"
+              required
+            />
+            <label for="userName">Услуги:</label>
+            <select multiple required>
+              <option value="ОКЛЕЙКА ПОЛИУРЕТАНОМ">ОКЛЕЙКА ПОЛИУРЕТАНОМ</option>
+              <option value="ОКЛЕЙКА ВИНИЛОМ">ОКЛЕЙКА ВИНИЛОМ</option>
+              <option value="ОКЛЕЙКА САЛОНА">ОКЛЕЙКА САЛОНА</option>
+              <option value="ДЕТЕЙЛИНГ ПОЛИРОВКА">ДЕТЕЙЛИНГ ПОЛИРОВКА</option>
+            </select>
+            <label for="userName">Дата:</label>
+            <input type="date" id="date" name="date" required />
+            <label for="userName">Время:</label>
+            <input type="time" id="time" name="time" required />
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="../../index.js"></script>
+    </div>
+  </body>
 </html>

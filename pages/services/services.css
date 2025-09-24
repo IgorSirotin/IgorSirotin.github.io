@@ -11,6 +11,9 @@
   text-align: center;
   gap: 1rem;
   color: #8f8f8f;
+  background-color: #0f0f0f;
+  border-radius: 1rem;
+  padding: 1rem;
 
   .row {
     display: flex;
